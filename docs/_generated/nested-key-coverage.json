@@ -1,12 +1,12 @@
 {
   "summary": {
     "targetCount": 25,
-    "nestedKeyCount": 1435,
-    "sameSpelling": 1334,
+    "nestedKeyCount": 1439,
+    "sameSpelling": 1335,
     "providerHandled": 80,
     "allowListed": 21,
     "caseDivergence": 0,
-    "noSdkMember": 0,
+    "noSdkMember": 3,
     "noWriteEvidence": 0,
     "freshObjectTargets": 15,
     "shapeClean": 173,
@@ -4042,7 +4042,7 @@
       "sdkClientPackage": "@aws-sdk/client-ecs",
       "keyStyle": "lower-first",
       "freshObjectMapper": true,
-      "nestedKeyCount": 142,
+      "nestedKeyCount": 146,
       "entries": [
         {
           "resourceType": "AWS::ECS::TaskDefinition",
@@ -4585,6 +4585,34 @@
         },
         {
           "resourceType": "AWS::ECS::TaskDefinition",
+          "nestedKey": "ContainerDefinitions.ResourceRequirements.SharingStrategy",
+          "topLevelProperty": "ContainerDefinitions",
+          "terminalKey": "SharingStrategy",
+          "bucket": "no-sdk-member"
+        },
+        {
+          "resourceType": "AWS::ECS::TaskDefinition",
+          "nestedKey": "ContainerDefinitions.ResourceRequirements.SharingStrategy.NvidiaMps",
+          "topLevelProperty": "ContainerDefinitions",
+          "terminalKey": "NvidiaMps",
+          "bucket": "no-sdk-member"
+        },
+        {
+          "resourceType": "AWS::ECS::TaskDefinition",
+          "nestedKey": "ContainerDefinitions.ResourceRequirements.SharingStrategy.NvidiaMps.MaxComputePercent",
+          "topLevelProperty": "ContainerDefinitions",
+          "terminalKey": "MaxComputePercent",
+          "bucket": "no-sdk-member"
+        },
+        {
+          "resourceType": "AWS::ECS::TaskDefinition",
+          "nestedKey": "ContainerDefinitions.ResourceRequirements.SharingStrategy.NvidiaMps.Memory",
+          "topLevelProperty": "ContainerDefinitions",
+          "terminalKey": "Memory",
+          "bucket": "same-spelling"
+        },
+        {
+          "resourceType": "AWS::ECS::TaskDefinition",
           "nestedKey": "ContainerDefinitions.ResourceRequirements.Type",
           "topLevelProperty": "ContainerDefinitions",
           "terminalKey": "Type",
@@ -5044,7 +5072,9 @@
       "unmatchedDefinitions": [
         "AuthorizationConfig",
         "FSxAuthorizationConfig",
-        "RestartPolicy"
+        "NvidiaMpsAllocation",
+        "RestartPolicy",
+        "SharingStrategy"
       ],
       "usedSegmentRenames": [
         "ProxyConfigurationProperties"

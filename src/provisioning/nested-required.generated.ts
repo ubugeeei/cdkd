@@ -536,6 +536,8 @@ export const NESTED_REQUIRED: ReadonlyMap<string, ReadonlyMap<string, readonly s
       ['ContainerDefinitions.LogConfiguration', ['LogDriver']],
       ['ContainerDefinitions.LogConfiguration.SecretOptions', ['Name', 'ValueFrom']],
       ['ContainerDefinitions.ResourceRequirements', ['Type']],
+      ['ContainerDefinitions.ResourceRequirements.SharingStrategy', ['NvidiaMps']],
+      ['ContainerDefinitions.ResourceRequirements.SharingStrategy.NvidiaMps', ['Memory']],
       ['ContainerDefinitions.Secrets', ['Name', 'ValueFrom']],
       ['ContainerDefinitions.Ulimits', ['HardLimit', 'Name', 'SoftLimit']],
       ['PlacementConstraints', ['Type']],
