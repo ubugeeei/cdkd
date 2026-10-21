@@ -505,6 +505,7 @@ export const NESTED_REQUIRED: ReadonlyMap<string, ReadonlyMap<string, readonly s
       ],
       ['DeploymentConfiguration.LifecycleHooks', ['LifecycleStages']],
       ['ForceNewDeployment', ['EnableForceNewDeployment']],
+      ['GatewayConnectors', ['PortName']],
       ['LoadBalancers.AdvancedConfiguration', ['AlternateTargetGroupArn']],
       ['Monitoring', ['MetricConfigurations']],
       ['Monitoring.MetricConfigurations', ['MetricNames', 'ResolutionSeconds']],

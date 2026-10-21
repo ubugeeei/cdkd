@@ -1,12 +1,12 @@
 {
   "summary": {
     "targetCount": 25,
-    "nestedKeyCount": 1439,
+    "nestedKeyCount": 1441,
     "sameSpelling": 1335,
     "providerHandled": 80,
     "allowListed": 21,
     "caseDivergence": 0,
-    "noSdkMember": 3,
+    "noSdkMember": 5,
     "noWriteEvidence": 0,
     "freshObjectTargets": 15,
     "shapeClean": 173,
@@ -3156,7 +3156,7 @@
       "sdkClientPackage": "@aws-sdk/client-ecs",
       "keyStyle": "lower-first",
       "freshObjectMapper": true,
-      "nestedKeyCount": 122,
+      "nestedKeyCount": 124,
       "entries": [
         {
           "resourceType": "AWS::ECS::Service",
@@ -3605,6 +3605,20 @@
         },
         {
           "resourceType": "AWS::ECS::Service",
+          "nestedKey": "ServiceConnectConfiguration.ContainerConfigurations",
+          "topLevelProperty": "ServiceConnectConfiguration",
+          "terminalKey": "ContainerConfigurations",
+          "bucket": "no-sdk-member"
+        },
+        {
+          "resourceType": "AWS::ECS::Service",
+          "nestedKey": "ServiceConnectConfiguration.ContainerConfigurations.LogLevel",
+          "topLevelProperty": "ServiceConnectConfiguration",
+          "terminalKey": "LogLevel",
+          "bucket": "no-sdk-member"
+        },
+        {
+          "resourceType": "AWS::ECS::Service",
           "nestedKey": "ServiceConnectConfiguration.Enabled",
           "topLevelProperty": "ServiceConnectConfiguration",
           "terminalKey": "Enabled",
@@ -4029,7 +4043,12 @@
       "shapeCleanCount": 18,
       "unmatchedDefinitions": [
         "ForceNewDeployment",
+        "GatewayConnector",
+        "GatewayConnectorFilters",
+        "GatewayConnectorHealthCheck",
+        "GatewayConnectorHealthCheckMatcher",
         "HookTimeoutConfig",
+        "ServiceConnectContainerConfiguration",
         "ServiceConnectTestTrafficRulesHeader",
         "ServiceConnectTestTrafficRulesHeaderValue"
       ],
