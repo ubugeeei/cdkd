@@ -832,7 +832,7 @@ export const PROPERTY_COVERAGE_BY_TYPE: ReadonlyMap<string, PropertyCoverage> = 
         ['Visibility', 'not yet implemented by cdkd'],
       ]),
       createOnlyDrops: new Set<string>(),
-      readOnly: new Set<string>(['Arn', 'Id']),
+      readOnly: new Set<string>(['Arn']),
       ccRouteUnavailable: true,
     },
   ],

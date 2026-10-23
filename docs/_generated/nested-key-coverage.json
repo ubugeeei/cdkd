@@ -1,15 +1,15 @@
 {
   "summary": {
     "targetCount": 25,
-    "nestedKeyCount": 1441,
+    "nestedKeyCount": 1442,
     "sameSpelling": 1335,
     "providerHandled": 80,
     "allowListed": 21,
     "caseDivergence": 0,
     "noSdkMember": 5,
-    "noWriteEvidence": 0,
+    "noWriteEvidence": 1,
     "freshObjectTargets": 15,
-    "shapeClean": 173,
+    "shapeClean": 174,
     "shapeHandled": 48,
     "shapeAllowListed": 9,
     "arrayVsWrapper": 0,
@@ -2450,7 +2450,7 @@
       "sdkClientPackage": "@aws-sdk/client-codebuild",
       "keyStyle": "lower-first",
       "freshObjectMapper": true,
-      "nestedKeyCount": 98,
+      "nestedKeyCount": 99,
       "entries": [
         {
           "resourceType": "AWS::CodeBuild::Project",
@@ -2542,6 +2542,14 @@
           "topLevelProperty": "BuildBatchConfig",
           "terminalKey": "ComputeTypesAllowed",
           "bucket": "same-spelling"
+        },
+        {
+          "resourceType": "AWS::CodeBuild::Project",
+          "nestedKey": "BuildBatchConfig.Restrictions.FleetsAllowed",
+          "topLevelProperty": "BuildBatchConfig",
+          "terminalKey": "FleetsAllowed",
+          "bucket": "no-write-evidence",
+          "sdkNearMiss": "fleetsAllowed"
         },
         {
           "resourceType": "AWS::CodeBuild::Project",
@@ -3140,7 +3148,7 @@
         }
       ],
       "shapeEntries": [],
-      "shapeCleanCount": 12,
+      "shapeCleanCount": 13,
       "unmatchedDefinitions": [
         "Artifacts",
         "Environment",
