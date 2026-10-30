@@ -456,6 +456,7 @@ export const CREATE_ONLY_PATHS_SNAPSHOT: ReadonlyMap<
       ['SourceRegion'],
       ['StorageEncrypted'],
       ['UseLatestRestorableTime'],
+      ['WithExpressConfiguration'],
     ],
   ],
   [
