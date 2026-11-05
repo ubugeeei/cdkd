@@ -153,6 +153,10 @@
       "IpAddressType",
       "Ipv6Address"
     ],
+    "AWS::EMR::Cluster": [
+      "MonitoringConfiguration",
+      "SessionEnabled"
+    ],
     "AWS::ElastiCache::CacheCluster": [
       "SnapshotArns"
     ],
@@ -173,6 +177,9 @@
     "AWS::Lambda::Function": [
       "CapacityProviderConfig",
       "FunctionScalingConfig"
+    ],
+    "AWS::Lambda::MicrovmImage": [
+      "KmsKeyIdentifier"
     ],
     "AWS::Neptune::DBCluster": [
       "AssociatedRoles",
