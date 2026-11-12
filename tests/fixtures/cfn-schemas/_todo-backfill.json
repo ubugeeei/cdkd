@@ -41,7 +41,8 @@
     ],
     "AWS::CloudTrail::Trail": [
       "AdvancedEventSelectors",
-      "AggregationConfigurations"
+      "AggregationConfigurations",
+      "RecursiveLogging"
     ],
     "AWS::CloudWatch::Alarm": [
       "ActionConfiguration",
@@ -337,6 +338,7 @@
     ],
     "AWS::S3Tables::TableBucket": [
       "EncryptionConfiguration",
+      "LoggingConfiguration",
       "MetricsConfiguration",
       "ReplicationConfiguration",
       "StorageClassConfiguration",

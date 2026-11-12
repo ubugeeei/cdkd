@@ -729,6 +729,7 @@ export const PROPERTY_COVERAGE_BY_TYPE: ReadonlyMap<string, PropertyCoverage> = 
       silentDrop: new Map<string, string>([
         ['AdvancedEventSelectors', 'not yet implemented by cdkd'],
         ['AggregationConfigurations', 'not yet implemented by cdkd'],
+        ['RecursiveLogging', 'not yet implemented by cdkd'],
       ]),
       createOnlyDrops: new Set<string>(),
       readOnly: new Set<string>(['Arn', 'SnsTopicArn']),
@@ -3059,6 +3060,7 @@ export const PROPERTY_COVERAGE_BY_TYPE: ReadonlyMap<string, PropertyCoverage> = 
       handled: new Set<string>(['TableBucketName', 'Tags']),
       silentDrop: new Map<string, string>([
         ['EncryptionConfiguration', 'not yet implemented by cdkd'],
+        ['LoggingConfiguration', 'not yet implemented by cdkd'],
         ['MetricsConfiguration', 'not yet implemented by cdkd'],
         ['ReplicationConfiguration', 'not yet implemented by cdkd'],
         ['StorageClassConfiguration', 'not yet implemented by cdkd'],
