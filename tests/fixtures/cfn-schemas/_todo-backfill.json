@@ -149,6 +149,9 @@
     "AWS::ECS::Service": [
       "GatewayConnectors"
     ],
+    "AWS::ECS::TaskDefinition": [
+      "TrustedExecutionConfiguration"
+    ],
     "AWS::EFS::MountTarget": [
       "IpAddress",
       "IpAddressType",
