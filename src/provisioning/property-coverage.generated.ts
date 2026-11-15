@@ -2359,12 +2359,14 @@ export const PROPERTY_COVERAGE_BY_TYPE: ReadonlyMap<string, PropertyCoverage> = 
         'VpcConfig',
       ]),
       silentDrop: new Map<string, string>([
+        ['AcceleratorConfig', 'not yet implemented by cdkd'],
         ['CapacityProviderConfig', 'not yet implemented by cdkd'],
         ['FunctionScalingConfig', 'not yet implemented by cdkd'],
         [
           'PublishToLatestPublished',
           'CloudFormation-only version-publishing directive with no AWS SDK equivalent',
         ],
+        ['RuntimeConfig', 'not yet implemented by cdkd'],
       ]),
       createOnlyDrops: new Set<string>(),
       readOnly: new Set<string>(['Arn', 'SnapStartResponse']),

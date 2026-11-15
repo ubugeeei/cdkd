@@ -179,8 +179,10 @@
       "SnowflakeDestinationConfiguration"
     ],
     "AWS::Lambda::Function": [
+      "AcceleratorConfig",
       "CapacityProviderConfig",
-      "FunctionScalingConfig"
+      "FunctionScalingConfig",
+      "RuntimeConfig"
     ],
     "AWS::Lambda::MicrovmImage": [
       "KmsKeyIdentifier"
