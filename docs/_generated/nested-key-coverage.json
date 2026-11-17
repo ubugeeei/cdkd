@@ -4052,6 +4052,7 @@
       "unmatchedDefinitions": [
         "ForceNewDeployment",
         "GatewayConnector",
+        "GatewayConnectorDeregistrationDelay",
         "GatewayConnectorFilters",
         "GatewayConnectorHealthCheck",
         "GatewayConnectorHealthCheckMatcher",
