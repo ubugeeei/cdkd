@@ -1,12 +1,12 @@
 {
   "summary": {
     "targetCount": 25,
-    "nestedKeyCount": 1442,
-    "sameSpelling": 1335,
+    "nestedKeyCount": 1447,
+    "sameSpelling": 1337,
     "providerHandled": 80,
     "allowListed": 21,
     "caseDivergence": 0,
-    "noSdkMember": 5,
+    "noSdkMember": 8,
     "noWriteEvidence": 1,
     "freshObjectTargets": 15,
     "shapeClean": 174,
@@ -10838,7 +10838,7 @@
       "sdkClientPackage": "@aws-sdk/client-scheduler",
       "keyStyle": "exact",
       "freshObjectMapper": false,
-      "nestedKeyCount": 47,
+      "nestedKeyCount": 52,
       "entries": [
         {
           "resourceType": "AWS::Scheduler::Schedule",
@@ -11080,6 +11080,41 @@
         },
         {
           "resourceType": "AWS::Scheduler::Schedule",
+          "nestedKey": "Target.EventBridgePutEventsV2Parameters",
+          "topLevelProperty": "Target",
+          "terminalKey": "EventBridgePutEventsV2Parameters",
+          "bucket": "no-sdk-member"
+        },
+        {
+          "resourceType": "AWS::Scheduler::Schedule",
+          "nestedKey": "Target.EventBridgePutEventsV2Parameters.DetailType",
+          "topLevelProperty": "Target",
+          "terminalKey": "DetailType",
+          "bucket": "same-spelling"
+        },
+        {
+          "resourceType": "AWS::Scheduler::Schedule",
+          "nestedKey": "Target.EventBridgePutEventsV2Parameters.Source",
+          "topLevelProperty": "Target",
+          "terminalKey": "Source",
+          "bucket": "same-spelling"
+        },
+        {
+          "resourceType": "AWS::Scheduler::Schedule",
+          "nestedKey": "Target.EventBridgePutRawEventsParameters",
+          "topLevelProperty": "Target",
+          "terminalKey": "EventBridgePutRawEventsParameters",
+          "bucket": "no-sdk-member"
+        },
+        {
+          "resourceType": "AWS::Scheduler::Schedule",
+          "nestedKey": "Target.EventBridgePutRawEventsParameters.Metadata",
+          "topLevelProperty": "Target",
+          "terminalKey": "Metadata",
+          "bucket": "no-sdk-member"
+        },
+        {
+          "resourceType": "AWS::Scheduler::Schedule",
           "nestedKey": "Target.Input",
           "topLevelProperty": "Target",
           "terminalKey": "Input",
@@ -11172,7 +11207,10 @@
       ],
       "shapeEntries": [],
       "shapeCleanCount": 7,
-      "unmatchedDefinitions": [],
+      "unmatchedDefinitions": [
+        "EventBridgePutEventsV2Parameters",
+        "EventBridgePutRawEventsParameters"
+      ],
       "usedSegmentRenames": [],
       "usedTerminalRenames": []
     }

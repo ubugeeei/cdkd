@@ -1410,6 +1410,7 @@ export const NESTED_REQUIRED: ReadonlyMap<string, ReadonlyMap<string, readonly s
       ['Target.EcsParameters.CapacityProviderStrategy', ['CapacityProvider']],
       ['Target.EcsParameters.NetworkConfiguration.AwsvpcConfiguration', ['Subnets']],
       ['Target.EventBridgeParameters', ['DetailType', 'Source']],
+      ['Target.EventBridgePutEventsV2Parameters', ['DetailType', 'Source']],
       ['Target.KinesisParameters', ['PartitionKey']],
       ['Target.SageMakerPipelineParameters.PipelineParameterList', ['Name', 'Value']],
     ]),

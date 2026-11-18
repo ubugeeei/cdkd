@@ -13,12 +13,12 @@ For every SDK provider that forwards a nested CFn config blob, diffs the blob's 
 ## Summary
 
 - Audited targets: **25**
-- Nested CFn key paths audited: **1442**
-- Same spelling in SDK model: **1335**
+- Nested CFn key paths audited: **1447**
+- Same spelling in SDK model: **1337**
 - Explicitly handled in provider: **80**
 - Allow-listed pass-throughs (does NOT block CI): **21**
 - **Case divergences (blocks CI): 0**
-- **No SDK member (blocks CI): 5**
+- **No SDK member (blocks CI): 8**
 - Write-evidence pass — fresh-object targets audited: **15**
 - **No write evidence (blocks CI): 1**
 - Shape pass — bare-array pairs clean: **174**
@@ -40,6 +40,9 @@ Each key below is templated by CFn but never reaches AWS: either it maps to no S
 | `AWS::ECS::TaskDefinition` | `ContainerDefinitions.ResourceRequirements.SharingStrategy` | no-sdk-member | — |
 | `AWS::ECS::TaskDefinition` | `ContainerDefinitions.ResourceRequirements.SharingStrategy.NvidiaMps` | no-sdk-member | — |
 | `AWS::ECS::TaskDefinition` | `ContainerDefinitions.ResourceRequirements.SharingStrategy.NvidiaMps.MaxComputePercent` | no-sdk-member | — |
+| `AWS::Scheduler::Schedule` | `Target.EventBridgePutEventsV2Parameters` | no-sdk-member | — |
+| `AWS::Scheduler::Schedule` | `Target.EventBridgePutRawEventsParameters` | no-sdk-member | — |
+| `AWS::Scheduler::Schedule` | `Target.EventBridgePutRawEventsParameters.Metadata` | no-sdk-member | — |
 
 ## Allow-listed pass-throughs
 
@@ -246,5 +249,5 @@ CFn members whose SHAPE diverges from the same-spelled SDK member (bare array vs
 | `AWS::Lambda::EventSourceMapping` | `lambda-eventsource-provider.ts` | `@aws-sdk/client-lambda` | exact | no | 38 | 6 |
 | `AWS::Pipes::Pipe` | `pipes-provider.ts` | `@aws-sdk/client-pipes` | exact | no | 208 | 0 |
 | `AWS::S3::Bucket` | `s3-bucket-provider.ts` | `@aws-sdk/client-s3` | exact | yes | 193 | 15 |
-| `AWS::Scheduler::Schedule` | `scheduler-schedule-provider.ts` | `@aws-sdk/client-scheduler` | exact | no | 47 | 0 |
+| `AWS::Scheduler::Schedule` | `scheduler-schedule-provider.ts` | `@aws-sdk/client-scheduler` | exact | no | 52 | 2 |
 
