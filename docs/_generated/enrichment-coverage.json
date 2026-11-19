@@ -6,7 +6,7 @@
     "noComputedAttr": 18,
     "unenrichedGap": 0,
     "sdkFallbackGap": 70,
-    "allowListedTypes": 83
+    "allowListedTypes": 82
   },
   "types": [
     {
@@ -922,7 +922,6 @@
       "sdkBacked": true,
       "readOnlyProperties": [
         "Endpoint",
-        "Id",
         "Port"
       ],
       "enrichedKeys": [],
@@ -930,11 +929,6 @@
         {
           "name": "Endpoint",
           "status": "gap"
-        },
-        {
-          "name": "Id",
-          "status": "allow-listed",
-          "rationale": "primaryIdentifier == physicalId; resolves via the resolver physicalId fallback"
         },
         {
           "name": "Port",

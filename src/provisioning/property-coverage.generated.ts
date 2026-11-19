@@ -555,8 +555,10 @@ export const PROPERTY_COVERAGE_BY_TYPE: ReadonlyMap<string, PropertyCoverage> = 
       silentDrop: new Map<string, string>([
         ['CapacityProviderConfiguration', 'not yet implemented by cdkd'],
         ['FilesystemConfigurations', 'not yet implemented by cdkd'],
+        ['HooksConfiguration', 'not yet implemented by cdkd'],
         ['PlatformVersion', 'not yet implemented by cdkd'],
         ['RequestHeaderConfiguration', 'not yet implemented by cdkd'],
+        ['ResourceConfigurations', 'not yet implemented by cdkd'],
         ['Tags', 'not yet implemented by cdkd'],
       ]),
       createOnlyDrops: new Set<string>(),
@@ -890,6 +892,7 @@ export const PROPERTY_COVERAGE_BY_TYPE: ReadonlyMap<string, PropertyCoverage> = 
         'WebAuthnUserVerification',
       ]),
       silentDrop: new Map<string, string>([
+        ['DcrConfiguration', 'not yet implemented by cdkd'],
         ['IssuerConfiguration', 'not yet implemented by cdkd'],
         ['KeyConfiguration', 'not yet implemented by cdkd'],
       ]),
@@ -991,7 +994,7 @@ export const PROPERTY_COVERAGE_BY_TYPE: ReadonlyMap<string, PropertyCoverage> = 
         ['EnablePerformanceInsights', 'not yet implemented by cdkd'],
       ]),
       createOnlyDrops: new Set<string>(),
-      readOnly: new Set<string>(['Endpoint', 'Id', 'Port']),
+      readOnly: new Set<string>(['Endpoint', 'Port']),
       ccRouteUnavailable: true,
     },
   ],

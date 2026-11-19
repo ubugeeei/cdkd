@@ -35,8 +35,10 @@
     "AWS::BedrockAgentCore::Runtime": [
       "CapacityProviderConfiguration",
       "FilesystemConfigurations",
+      "HooksConfiguration",
       "PlatformVersion",
       "RequestHeaderConfiguration",
+      "ResourceConfigurations",
       "Tags"
     ],
     "AWS::CloudTrail::Trail": [
@@ -55,6 +57,7 @@
       "Visibility"
     ],
     "AWS::Cognito::UserPool": [
+      "DcrConfiguration",
       "IssuerConfiguration",
       "KeyConfiguration"
     ],
