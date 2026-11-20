@@ -23,6 +23,9 @@
     "regenerations of the `types` block."
   ],
   "types": {
+    "AWS::ApiGateway::Authorizer": [
+      "JwtConfiguration"
+    ],
     "AWS::ApiGateway::Deployment": [
       "DeploymentCanarySettings"
     ],
@@ -323,6 +326,9 @@
     ],
     "AWS::Route53::HostedZone": [
       "DelegationSetId"
+    ],
+    "AWS::Route53::RecordSet": [
+      "AZAffinity"
     ],
     "AWS::S3::Bucket": [
       "AbacStatus",
