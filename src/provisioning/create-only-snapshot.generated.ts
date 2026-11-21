@@ -43,9 +43,11 @@ export const CREATE_ONLY_PATHS_SNAPSHOT: ReadonlyMap<
     [
       ['CertificateAuthorityArn'],
       ['CertificateExport'],
+      ['CertificateUsage'],
       ['DomainName'],
       ['DomainValidationOptions'],
       ['KeyAlgorithm'],
+      ['RootHierarchyType'],
       ['SubjectAlternativeNames'],
     ],
   ],
